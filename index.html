@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="./src/main.js" type="module" defer></script>
+    <script src="./src/contents/contents.js" type="module" defer></script>
+    <script src="./src/script.js" type="module" defer></script>
+    <title>THREE.js</title>
+  </head>
+  <body>
+    <div class="loading container">
+      <progress id="file" value="0" min="0" max="100"></progress>
+      <h1>WEB CAMERA SCREENS DEMO</h1>
+    </div>
+    <div class="canvas container"></div>
+    <div class="main-btn container">
+      <header>
+        <button>←</button>
+      </header>
+      <div class="middle">
+        <button>&lt;</button>
+        <button class="view">view</button>
+        <button>&gt;</button>
+      </div>
+      <footer>
+        <button>info</button>
+      </footer>
+    </div>
+    <div class="contents container"></div>
+    <div class="contents-btn container"></div>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  z-index: 1;
+}
+
+.loading h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-self: start;
+  -webkit-appearance: none;
+  width: 100vw;
+  border-radius: 0;
+  background-color: aliceblue;
+  height: 4px;
+}
+
+.contents-btn {
+  user-select: none;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.contents-btn button {
+  user-select: auto;
+  pointer-events: auto;
+}
+
+.contents {
+  display: none;
+}
+
+.canvas {
+  /* display: none; */
+}
+
+::-webkit-progress-bar {
+  background-color: aliceblue;
+}
+::-webkit-progress-value {
+  background-color: coral;
+}
+::-moz-progress-bar {
+  background-color: coral;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fade-out 1s 1s ease-in-out;
+}
+
+.main-btn {
+  padding: 4vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-btn button {
+  color: aliceblue;
+  padding: 1em 2em;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 150ms ease;
+}
+
+.main-btn button:hover,
+.main-btn button:active {
+  opacity: 0.5;
+}
+
+.middle {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.middle button {
+  mix-blend-mode: difference;
+}
+
+.show {
+  display: flex;
+}
